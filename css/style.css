@@ -152,21 +152,14 @@ h5 {
   list-style: none;
 }
 
-.aside-item {
+.aside-link:link,
+.aside-link:visited {
   padding: var(--space-sm) var(--space-md);
   border-radius: var(--border-radius);
   cursor: pointer;
   border-right: 3px solid transparent;
   transition: background-color 0.2s, border-left 0.2s;
-}
 
-.aside-item--active {
-  background-color: var(--gray-1);
-  border-left: 3px solid var(--primary-color);
-}
-
-.aside-link:link,
-.aside-link:visited {
   display: flex;
   align-items: center;
   gap: var(--space-sm);
@@ -181,6 +174,9 @@ h5 {
 
 .aside-item--active .aside-link:link,
 .aside-item--active .aside-link:visited {
+  background-color: var(--gray-1);
+  border-left: 3px solid var(--primary-color);
+
   color: var(--primary-color);
   font-weight: var(--font-w-medium);
 }
