@@ -157,7 +157,7 @@ h5 {
   padding: var(--space-sm) var(--space-md);
   border-radius: var(--border-radius);
   cursor: pointer;
-  border-right: 3px solid transparent;
+  border-left: 3px solid transparent;
   transition: background-color 0.2s, border-left 0.2s;
 
   display: flex;
@@ -168,8 +168,9 @@ h5 {
   color: #000;
 }
 
-.aside-item:hover {
-  background: #f2f2f2;
+.aside-item .aside-link:hover,
+.aside-item .aside-link:active {
+  background: var(--gray-1);
 }
 
 .aside-item--active .aside-link:link,
@@ -191,7 +192,8 @@ h5 {
   display: none;
 }
 
-.aside-mini .aside-item {
+.aside-mini .aside-link:link,
+.aside-mini .aside-link:visited {
   display: flex;
   padding: var(--space-sm);
   justify-content: center;
@@ -199,21 +201,16 @@ h5 {
   border: none;
 }
 
-.aside-mini .aside-item:hover {
-  background: var(--gray-1);
-}
-
-.aside-mini .aside-item--active {
-  background: var(--primary-color);
-}
-
-.aside-mini .aside-item--active:hover {
-  background: var(--primary-color);
-}
-
 .aside-mini .aside-item--active .aside-link:link,
 .aside-mini .aside-item--active .aside-link:visited {
+  border-left: none;
+  background: var(--primary-color);
   color: #fff;
+}
+
+.aside-mini .aside-item--active .aside-link:hover,
+.aside-mini .aside-item--active .aside-link:active {
+  background: var(--primary-color);
 }
 
 .aside-mini .aside-item span {
