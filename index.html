@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script defer src="js/toogle-nav.js"></script>
+
+    <title>Suchit Laundry | Dashboard</title>
+  </head>
+  <body class="grid grid-1-by-5">
+    <aside class="aside" id="aside">
+      <div class="logo-container">
+        <img class="logo" src="images/logo.png" alt="Suchit Laundry Logo" />
+        <h1 class="logo-heading">Laundry</h1>
+      </div>
+      <ul class="aside-items">
+        <li class="aside-item aside-item--active">
+          <a href="#!" class="aside-link">
+            <ion-icon name="home-outline" class="aside-icon"></ion-icon>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li class="aside-item">
+          <a href="#!" class="aside-link">
+            <ion-icon name="bag-outline" class="aside-icon"></ion-icon>
+            <span>POS</span>
+          </a>
+        </li>
+        <li class="aside-item">
+          <a href="#!" class="aside-link">
+            <ion-icon name="calendar-outline" class="aside-icon"></ion-icon>
+            <span>Orders</span>
+          </a>
+        </li>
+        <li class="aside-item">
+          <a href="#!" class="aside-link">
+            <ion-icon name="person-add-outline" class="aside-icon"></ion-icon>
+            <span>Customers</span>
+          </a>
+        </li>
+        <li class="aside-item">
+          <a href="#!" class="aside-link">
+            <ion-icon name="copy-outline" class="aside-icon"></ion-icon>
+            <span>Coupon</span>
+          </a>
+        </li>
+        <li class="aside-item">
+          <a href="#!" class="aside-link">
+            <ion-icon name="cash-outline" class="aside-icon"></ion-icon>
+            <span>Expense</span>
+          </a>
+        </li>
+        <li class="aside-item">
+          <a href="#!" class="aside-link">
+            <ion-icon name="bag-add-outline" class="aside-icon"></ion-icon>
+            <span>Services</span>
+          </a>
+        </li>
+        <li class="aside-item">
+          <a href="#!" class="aside-link">
+            <ion-icon name="stats-chart-outline" class="aside-icon"></ion-icon>
+            <span>Reports</span>
+          </a>
+        </li>
+        <li class="aside-item">
+          <a href="#!" class="aside-link">
+            <ion-icon name="log-out-outline" class="aside-icon"></ion-icon>
+            <span>Logout</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <main class="main">
+      <nav class="main-nav">
+        <div class="nav-title-part">
+          <button class="toggle-aside-btn" id="toggle-aside-btn">
+            <ion-icon
+              name="reorder-three-outline"
+              class="toggle-aside-icon"
+              id="open-mini-icon"
+            ></ion-icon>
+            <ion-icon
+              name="arrow-forward-outline"
+              class="toggle-aside-icon hidden-el"
+              id="close-mini-icon"
+            ></ion-icon>
+          </button>
+
+          <h2>Dashboard</h2>
+        </div>
+
+        <div class="notification-part">
+          <button class="notification-icon-container">
+            <ion-icon name="notifications" class="notification-icon"></ion-icon>
+          </button>
+        </div>
+      </nav>
+    </main>
+  </body>
+</html>
